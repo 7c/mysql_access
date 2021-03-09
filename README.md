@@ -16,6 +16,20 @@ The UPDATE_TIME column also shows this information for partitioned InnoDB tables
 ```
 ./mysql_access.sh
 ./mysql_access.sh -p674245
-./mysql_access.sh -p67244 -h 192.168.0.1
+./mysql_access.sh -p67244
+```
+
+## Example output
+```
+DATABASE: xlam
++----------------+---------------------+--------+
+| TABLE_NAME     | UPDATE_TIME         | ENGINE |
++----------------+---------------------+--------+
+| dnp_admin      | 2016-07-28 12:42:35 | MyISAM |
+| dnp_domains    | 2016-07-28 12:42:35 | MyISAM |
+| dnp_dom2cat    | 2016-07-28 12:42:35 | MyISAM |
+| dnp_config     | 2016-07-28 12:42:35 | MyISAM |
+| dnp_categories | 2016-07-28 12:42:35 | MyISAM |
++----------------+---------------------+--------+
 ```
 

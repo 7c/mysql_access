@@ -11,9 +11,9 @@
 
 ## Usage
 ##
-## ./mysql_access.sh  [mysql command line options like -p<pass>]
+## ./mysql_access.sh [-p<pass>]
 
-arg1="$1 $2 $3 $4 $5 $6 $7"
+arg1="$1"
 ## read all databases into an array
 dbs=()
 for i in $(mysql $arg1 -e 'show databases'); do
